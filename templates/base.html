@@ -4,12 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title>{% block title %}Group Project Food Finder{% endblock %}</title>
+
+    <style>
+        body{
+            background-color: azure;
+            font-family: "Arial Rounded MT Bold", sans-serif;
+            padding-top: 50px;
+        }
+
+
+
+        .container{
+            max-width: 550px;
+            margin: auto;
+            background-color: #ffff;
+            -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+            box-shadow:2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+        }
+    </style>
 </head>
 <body>
   <main>
-    {% block content %}
+  <div class="container">
+      {% block content %}
 
     {% endblock %}
+
+  </div>
   </main>
 </body>
 </html>
